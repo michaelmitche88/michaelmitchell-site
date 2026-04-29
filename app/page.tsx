@@ -48,7 +48,8 @@ function Nav() {
 function Hero() {
   return (
     <section id="top" className="max-w-site mx-auto px-6 md:px-10 pt-20 md:pt-32 pb-20">
-      <div className="max-w-narrow">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+        <div className="md:flex-1 max-w-narrow">
         <p className="section-label mb-6">Available for consulting</p>
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05] text-ink mb-6">
           Senior integrations engineer, ServiceNow developer, and Workday administrator.
@@ -67,6 +68,22 @@ function Hero() {
           <p className="text-sm text-ink-soft">
             Currently available for consulting and contract engagements.
           </p>
+        </div>
+      </div>
+        <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden flex-shrink-0 border border-[#e5e4e0]">
+          <img
+            src="/headshot.png"
+            alt="Michael Mitchell"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+        <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden flex-shrink-0 border border-[#e5e4e0]">
+          <img
+            src="/headshot.png"
+            alt="Michael Mitchell"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>
@@ -428,14 +445,14 @@ function Contact() {
           <div className="mt-12 pt-8 border-t border-[#e5e4e0] space-y-2 text-[15px] text-ink-soft">
             <p>
               Prefer email? Reach me at{" "}
-              <a href="mailto:michael@example.com" className="text-ink link-underline">
-                michael@example.com
-              </a>
+            <a href="mailto:michael.mitche@gmail.com" className="text-ink link-underline">
+  michael.mitche@gmail.com
+</a>
             </p>
             <p>
               On LinkedIn:{" "}
               <a
-                href="https://www.linkedin.com/in/michaelmitchell"
+                href="https://www.linkedin.com/in/michaelmitche"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink link-underline"
