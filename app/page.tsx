@@ -17,8 +17,6 @@ export default function Home() {
   );
 }
 
-/* -------------------- NAV -------------------- */
-
 function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-paper/80 backdrop-blur-md border-b border-[#e5e4e0]">
@@ -32,18 +30,13 @@ function Nav() {
           <a href="#experience" className="link-underline">Experience</a>
           <a href="#contact" className="link-underline">Contact</a>
         </div>
-        
-          href="#contact"
-          className="hidden md:inline-block text-sm bg-ink text-paper px-4 py-2 rounded-md hover:bg-ink-soft transition-colors"
-        >
+        <a href="#contact" className="hidden md:inline-block text-sm bg-ink text-paper px-4 py-2 rounded-md hover:bg-ink-soft transition-colors">
           Let's work together
         </a>
       </div>
     </nav>
   );
 }
-
-/* -------------------- HERO -------------------- */
 
 function Hero() {
   return (
@@ -55,14 +48,10 @@ function Hero() {
             Senior integrations engineer, ServiceNow developer, and Workday administrator.
           </h1>
           <p className="text-lg md:text-xl text-ink-soft leading-relaxed mb-10 max-w-[640px]">
-            I help companies connect the systems that run their business.
-            Twelve years across ServiceNow, Workday, and the messy middle in between.
+            I help companies connect the systems that run their business. Twelve years across ServiceNow, Workday, and the messy middle in between.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
-            
-              href="#contact"
-              className="inline-flex items-center justify-center bg-ink text-paper px-6 py-3 rounded-md hover:bg-ink-soft transition-colors font-medium"
-            >
+            <a href="#contact" className="inline-flex items-center justify-center bg-ink text-paper px-6 py-3 rounded-md hover:bg-ink-soft transition-colors font-medium">
               Let's work together
             </a>
             <p className="text-sm text-ink-soft">
@@ -71,18 +60,12 @@ function Hero() {
           </div>
         </div>
         <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden flex-shrink-0 border border-[#e5e4e0]">
-          <img
-            src="/headshot.png"
-            alt="Michael Mitchell"
-            className="w-full h-full object-cover"
-          />
+          <img src="/headshot.png" alt="Michael Mitchell" className="w-full h-full object-cover" />
         </div>
       </div>
     </section>
   );
 }
-
-/* -------------------- ABOUT -------------------- */
 
 function About() {
   return (
@@ -97,24 +80,13 @@ function About() {
           </h2>
           <div className="space-y-5 text-ink-soft leading-relaxed text-[17px]">
             <p>
-              I started my career in 2014 building integrations between asset management
-              systems and Microsoft Dynamics. Within a year I was on the HRIS team, learning
-              the platforms I've built my career on: Workday, ServiceNow, and the dozens of
-              systems that have to talk to them.
+              I started my career in 2014 building integrations between asset management systems and Microsoft Dynamics. Within a year I was on the HRIS team, learning the platforms I've built my career on: Workday, ServiceNow, and the dozens of systems that have to talk to them.
             </p>
             <p>
-              Since then I've stood up ServiceNow from scratch, led a Workday Payroll go-live,
-              re-implemented Workday end-to-end, built integrations using everything from
-              BizTalk and MuleSoft to scripted REST APIs, and developed the SQL Server stored
-              procedures and Power BI reports that turn HR data into something leadership can
-              actually use. I'm ITIL Foundation certified and currently working toward
-              additional ServiceNow certifications.
+              Since then I've stood up ServiceNow from scratch, led a Workday Payroll go-live, re-implemented Workday end-to-end, built integrations using everything from BizTalk and MuleSoft to scripted REST APIs, and developed the SQL Server stored procedures and Power BI reports that turn HR data into something leadership can actually use. I'm ITIL Foundation certified and currently working toward additional ServiceNow certifications.
             </p>
             <p>
-              I'm based in Tulsa, work hybrid or remote, and I'm at my best when a project
-              sits at the seam between systems. The kind of work where the answer isn't in
-              any one platform's documentation, and someone has to hold the whole thing in
-              their head until it works.
+              I'm based in Tulsa, work hybrid or remote, and I'm at my best when a project sits at the seam between systems. The kind of work where the answer isn't in any one platform's documentation, and someone has to hold the whole thing in their head until it works.
             </p>
           </div>
         </div>
@@ -123,39 +95,13 @@ function About() {
   );
 }
 
-/* -------------------- SERVICES -------------------- */
-
 const services = [
-  {
-    num: "01",
-    title: "ServiceNow Development",
-    body: "Full-stack ServiceNow work across ITSM and HRSD. Service Portal, Service Catalog, custom modules, CMDB, Asset, Change, Incident, Problem, Knowledge, Project. Workflows, Flow Designer, business rules, client scripts, scripted REST APIs, IntegrationHub.",
-  },
-  {
-    num: "02",
-    title: "Workday Administration",
-    body: "HCM, Payroll, Benefits, Learning, Time and Absence, and Talent Management. EIBs, Core Connectors, Workday Studio, advanced reporting, calculated fields, business processes, security configuration. Implementations, re-implementations, and ongoing platform ownership.",
-  },
-  {
-    num: "03",
-    title: "Enterprise Integrations",
-    body: "The hardest part of any HR or IT stack is the connections between systems. I build them in REST, SOAP, JSON, XML, MuleSoft, BizTalk, and ServiceNow IntegrationHub. New integrations, broken integrations, and the legacy ones nobody wants to touch.",
-  },
-  {
-    num: "04",
-    title: "AI-Assisted Automation",
-    body: "Practical AI integration into existing workflows. ServiceNow Virtual Agent, AI Search, and Predictive Intelligence for service delivery. AI-assisted development tooling (Copilot, Claude, Codex) for accelerating custom work. The version of agentic AI that actually ships.",
-  },
-  {
-    num: "05",
-    title: "HRIS Strategy and Implementation",
-    body: "End-to-end HRIS work covering payroll go-lives, benefits vendor onboarding, time clock integration, data migration, and reporting. I've done this side from both the implementation team and the long-term operations team, which changes how I design things.",
-  },
-  {
-    num: "06",
-    title: "Curriculum and Technical Training",
-    body: "Course development for major e-learning platforms covering Workday, ServiceNow, and integration patterns. Technical content that holds up because it's written by someone who actually shipped the thing.",
-  },
+  { num: "01", title: "ServiceNow Development", body: "Full-stack ServiceNow work across ITSM and HRSD. Service Portal, Service Catalog, custom modules, CMDB, Asset, Change, Incident, Problem, Knowledge, Project. Workflows, Flow Designer, business rules, client scripts, scripted REST APIs, IntegrationHub." },
+  { num: "02", title: "Workday Administration", body: "HCM, Payroll, Benefits, Learning, Time and Absence, and Talent Management. EIBs, Core Connectors, Workday Studio, advanced reporting, calculated fields, business processes, security configuration. Implementations, re-implementations, and ongoing platform ownership." },
+  { num: "03", title: "Enterprise Integrations", body: "The hardest part of any HR or IT stack is the connections between systems. I build them in REST, SOAP, JSON, XML, MuleSoft, BizTalk, and ServiceNow IntegrationHub. New integrations, broken integrations, and the legacy ones nobody wants to touch." },
+  { num: "04", title: "AI-Assisted Automation", body: "Practical AI integration into existing workflows. ServiceNow Virtual Agent, AI Search, and Predictive Intelligence for service delivery. AI-assisted development tooling (Copilot, Claude, Codex) for accelerating custom work. The version of agentic AI that actually ships." },
+  { num: "05", title: "HRIS Strategy and Implementation", body: "End-to-end HRIS work covering payroll go-lives, benefits vendor onboarding, time clock integration, data migration, and reporting. I've done this side from both the implementation team and the long-term operations team, which changes how I design things." },
+  { num: "06", title: "Curriculum and Technical Training", body: "Course development for major e-learning platforms covering Workday, ServiceNow, and integration patterns. Technical content that holds up because it's written by someone who actually shipped the thing." },
 ];
 
 function Services() {
@@ -174,13 +120,9 @@ function Services() {
           </p>
         </div>
       </div>
-
       <div className="grid md:grid-cols-2 gap-px bg-[#e5e4e0] border border-[#e5e4e0] rounded-lg overflow-hidden">
         {services.map((service) => (
-          <div
-            key={service.num}
-            className="bg-paper p-8 md:p-10 hover:bg-white transition-colors"
-          >
+          <div key={service.num} className="bg-paper p-8 md:p-10 hover:bg-white transition-colors">
             <p className="font-mono text-xs text-accent mb-3">{service.num}</p>
             <h3 className="text-xl font-semibold mb-4 text-ink">{service.title}</h3>
             <p className="text-ink-soft leading-relaxed text-[15px]">{service.body}</p>
@@ -191,39 +133,12 @@ function Services() {
   );
 }
 
-/* -------------------- EXPERIENCE -------------------- */
-
 const experience = [
-  {
-    company: "Madecraft",
-    role: "Curriculum Author and Integration Specialist",
-    dates: "Mar 2026 — Present",
-    body: "Authoring certification courses on Workday, ServiceNow, and AI integrations for global e-learning platforms. Translating complex platform work into curriculum that teaches working professionals how to actually do the job.",
-  },
-  {
-    company: "T.D. Williamson",
-    role: "Senior Applications Analyst",
-    dates: "Apr 2021 — Apr 2026",
-    body: "Owned the Workday HCM platform and served as primary ServiceNow developer for a global pipeline services manufacturer. Built and maintained integrations across Workday, ServiceNow, Active Directory, Microsoft Dynamics 365, Office 365, and benefits providers. Implemented ServiceNow agentic AI capabilities and introduced AI-assisted development tooling across the team.",
-  },
-  {
-    company: "Helmerich and Payne",
-    role: "Senior Applications Systems Analyst, HRIS",
-    dates: "Jul 2019 — Apr 2021",
-    body: "Led the technical workstream for a full Workday re-implementation across HCM, Payroll, and Learning at one of the largest U.S. land drilling contractors. Replaced a heavily customized legacy environment with a clean configuration aligned to current business processes.",
-  },
-  {
-    company: "T.D. Williamson",
-    role: "Application Analyst",
-    dates: "Sep 2015 — Jul 2019",
-    body: "Stood up the ServiceNow platform from initial rollout. Led the 2017 Workday Payroll go-live transitioning the company off ADP Payforce, including benefits vendor integrations, time clock deployments, and parallel payroll testing. Earned ITIL Foundation certification.",
-  },
-  {
-    company: "Helmerich and Payne",
-    role: "Applications Systems Analyst",
-    dates: "Jan 2014 — Sep 2015",
-    body: "First role out of college. Managed the TabWare asset management system integrated with Microsoft Dynamics ERP. Built BizTalk integrations supporting Workday, Kronos, payroll, and Active Directory.",
-  },
+  { company: "Madecraft", role: "Curriculum Author and Integration Specialist", dates: "Mar 2026 — Present", body: "Authoring certification courses on Workday, ServiceNow, and AI integrations for global e-learning platforms. Translating complex platform work into curriculum that teaches working professionals how to actually do the job." },
+  { company: "T.D. Williamson", role: "Senior Applications Analyst", dates: "Apr 2021 — Apr 2026", body: "Owned the Workday HCM platform and served as primary ServiceNow developer for a global pipeline services manufacturer. Built and maintained integrations across Workday, ServiceNow, Active Directory, Microsoft Dynamics 365, Office 365, and benefits providers. Implemented ServiceNow agentic AI capabilities and introduced AI-assisted development tooling across the team." },
+  { company: "Helmerich and Payne", role: "Senior Applications Systems Analyst, HRIS", dates: "Jul 2019 — Apr 2021", body: "Led the technical workstream for a full Workday re-implementation across HCM, Payroll, and Learning at one of the largest U.S. land drilling contractors. Replaced a heavily customized legacy environment with a clean configuration aligned to current business processes." },
+  { company: "T.D. Williamson", role: "Application Analyst", dates: "Sep 2015 — Jul 2019", body: "Stood up the ServiceNow platform from initial rollout. Led the 2017 Workday Payroll go-live transitioning the company off ADP Payforce, including benefits vendor integrations, time clock deployments, and parallel payroll testing. Earned ITIL Foundation certification." },
+  { company: "Helmerich and Payne", role: "Applications Systems Analyst", dates: "Jan 2014 — Sep 2015", body: "First role out of college. Managed the TabWare asset management system integrated with Microsoft Dynamics ERP. Built BizTalk integrations supporting Workday, Kronos, payroll, and Active Directory." },
 ];
 
 function Experience() {
@@ -238,12 +153,10 @@ function Experience() {
             A condensed timeline.
           </h2>
           <p className="text-ink-soft text-[17px] leading-relaxed">
-            Twelve years across two industries (oil and gas, manufacturing) and two
-            specializations (HRIS and platform development) at companies headquartered in Tulsa.
+            Twelve years across two industries (oil and gas, manufacturing) and two specializations (HRIS and platform development) at companies headquartered in Tulsa.
           </p>
         </div>
       </div>
-
       <div className="grid md:grid-cols-12 gap-10">
         <div className="md:col-span-3"></div>
         <div className="md:col-span-9 max-w-[760px]">
@@ -261,17 +174,11 @@ function Experience() {
               </li>
             ))}
           </ol>
-
           <div className="mt-12 pt-8 border-t border-[#e5e4e0]">
             <p className="text-ink-soft text-[15px] mb-4">
               Education: Oklahoma State University, B.S. Management Science and Information Systems, December 2012.
             </p>
-            
-              href="https://www.linkedin.com/in/michaelmitche/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-ink font-medium link-underline"
-            >
+            <a href="https://www.linkedin.com/in/michaelmitche/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-ink font-medium link-underline">
               For the full work history, connect on LinkedIn
               <span aria-hidden="true">→</span>
             </a>
@@ -282,25 +189,11 @@ function Experience() {
   );
 }
 
-/* -------------------- PASSIONS -------------------- */
-
 const passions = [
-  {
-    title: "Aviation",
-    body: "I'm not the one in the cockpit, but I love being in the air. I have friends and family who fly, and some of my favorite weekends start with a small plane and end somewhere new. There's something about general aviation that crosses over into how I think about engineering. Pre-flight checklists, system redundancy, real consequences for sloppy thinking.",
-  },
-  {
-    title: "Travel",
-    body: "The U.S. and abroad. New cities, new food, the feeling of figuring out a place from the ground up. Travel is the cheapest way I know to put myself in beginner mode and remember that the world is bigger than the project I'm working on.",
-  },
-  {
-    title: "Roller Coasters and Engineering",
-    body: "I'm a roller coaster guy. The mechanical elegance, the structural engineering, the precision. I'll plan a trip around a park. There's a real engineering thrill in something that's been designed to hurl you through space at the edge of safety, repeatedly, for thousands of people a day, without failing.",
-  },
-  {
-    title: "Space",
-    body: "SpaceX, the new space race, the engineering problems we're solving in real time. I follow it the way some people follow sports. The combination of long-horizon ambition and ruthless iteration is my favorite kind of problem-solving to watch.",
-  },
+  { title: "Aviation", body: "I'm not the one in the cockpit, but I love being in the air. I have friends and family who fly, and some of my favorite weekends start with a small plane and end somewhere new. There's something about general aviation that crosses over into how I think about engineering. Pre-flight checklists, system redundancy, real consequences for sloppy thinking." },
+  { title: "Travel", body: "The U.S. and abroad. New cities, new food, the feeling of figuring out a place from the ground up. Travel is the cheapest way I know to put myself in beginner mode and remember that the world is bigger than the project I'm working on." },
+  { title: "Roller Coasters and Engineering", body: "I'm a roller coaster guy. The mechanical elegance, the structural engineering, the precision. I'll plan a trip around a park. There's a real engineering thrill in something that's been designed to hurl you through space at the edge of safety, repeatedly, for thousands of people a day, without failing." },
+  { title: "Space", body: "SpaceX, the new space race, the engineering problems we're solving in real time. I follow it the way some people follow sports. The combination of long-horizon ambition and ruthless iteration is my favorite kind of problem-solving to watch." },
 ];
 
 function Passions() {
@@ -319,7 +212,6 @@ function Passions() {
           </p>
         </div>
       </div>
-
       <div className="grid md:grid-cols-12 gap-10">
         <div className="md:col-span-3"></div>
         <div className="md:col-span-9">
@@ -337,8 +229,6 @@ function Passions() {
   );
 }
 
-/* -------------------- CONTACT -------------------- */
-
 function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -347,7 +237,6 @@ function Contact() {
     e.preventDefault();
     setStatus("sending");
     setErrorMsg("");
-
     const formData = new FormData(e.currentTarget);
     const data = {
       name: formData.get("name"),
@@ -355,19 +244,16 @@ function Contact() {
       company: formData.get("company"),
       message: formData.get("message"),
     };
-
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-
       if (!res.ok) {
         const errData = await res.json().catch(() => ({}));
         throw new Error(errData.error || "Something went wrong");
       }
-
       setStatus("sent");
       (e.target as HTMLFormElement).reset();
     } catch (err) {
@@ -387,17 +273,12 @@ function Contact() {
             Let's talk about your project.
           </h2>
           <p className="text-ink-soft text-[17px] leading-relaxed mb-10">
-            I'm currently taking on consulting and contract engagements. The best way to start
-            a conversation is the form below. If we're a fit, I'll get back to you within one
-            business day.
+            I'm currently taking on consulting and contract engagements. The best way to start a conversation is the form below. If we're a fit, I'll get back to you within one business day.
           </p>
-
           {status === "sent" ? (
             <div className="border border-[#e5e4e0] bg-white rounded-lg p-8 text-center">
               <p className="text-ink font-semibold mb-2">Message sent.</p>
-              <p className="text-ink-soft text-[15px]">
-                Thanks for reaching out. I'll be in touch within one business day.
-              </p>
+              <p className="text-ink-soft text-[15px]">Thanks for reaching out. I'll be in touch within one business day.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
@@ -407,51 +288,20 @@ function Contact() {
               </div>
               <Field label="Company" name="company" type="text" />
               <div>
-                <label className="block text-sm font-medium text-ink mb-2">
-                  What are you working on?
-                </label>
-                <textarea
-                  name="message"
-                  required
-                  rows={5}
-                  className="w-full bg-white border border-[#e5e4e0] rounded-md px-4 py-3 text-[15px] text-ink focus:outline-none focus:border-accent transition-colors resize-none"
-                />
+                <label className="block text-sm font-medium text-ink mb-2">What are you working on?</label>
+                <textarea name="message" required rows={5} className="w-full bg-white border border-[#e5e4e0] rounded-md px-4 py-3 text-[15px] text-ink focus:outline-none focus:border-accent transition-colors resize-none" />
               </div>
-
               {status === "error" && (
-                <p className="text-sm text-red-700">
-                  Couldn't send the message. {errorMsg} You can also email me directly.
-                </p>
+                <p className="text-sm text-red-700">Couldn't send the message. {errorMsg} You can also email me directly.</p>
               )}
-
-              <button
-                type="submit"
-                disabled={status === "sending"}
-                className="bg-ink text-paper px-6 py-3 rounded-md hover:bg-ink-soft transition-colors font-medium disabled:opacity-60"
-              >
+              <button type="submit" disabled={status === "sending"} className="bg-ink text-paper px-6 py-3 rounded-md hover:bg-ink-soft transition-colors font-medium disabled:opacity-60">
                 {status === "sending" ? "Sending..." : "Send"}
               </button>
             </form>
           )}
-
           <div className="mt-12 pt-8 border-t border-[#e5e4e0] space-y-2 text-[15px] text-ink-soft">
-            <p>
-              Prefer email? Reach me at{" "}
-              <a href="mailto:michael.mitche@gmail.com" className="text-ink link-underline">
-                michael.mitche@gmail.com
-              </a>
-            </p>
-            <p>
-              On LinkedIn:{" "}
-              
-                href="https://www.linkedin.com/in/michaelmitche/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-ink link-underline"
-              >
-                linkedin.com/in/michaelmitche
-              </a>
-            </p>
+            <p>Prefer email? Reach me at{" "}<a href="mailto:michael.mitche@gmail.com" className="text-ink link-underline">michael.mitche@gmail.com</a></p>
+            <p>On LinkedIn:{" "}<a href="https://www.linkedin.com/in/michaelmitche/" target="_blank" rel="noopener noreferrer" className="text-ink link-underline">linkedin.com/in/michaelmitche</a></p>
             <p>Based in Tulsa, Oklahoma. Available remote or hybrid.</p>
           </div>
         </div>
@@ -460,31 +310,14 @@ function Contact() {
   );
 }
 
-function Field({
-  label,
-  name,
-  type,
-  required,
-}: {
-  label: string;
-  name: string;
-  type: string;
-  required?: boolean;
-}) {
+function Field({ label, name, type, required }: { label: string; name: string; type: string; required?: boolean }) {
   return (
     <div>
       <label className="block text-sm font-medium text-ink mb-2">{label}</label>
-      <input
-        name={name}
-        type={type}
-        required={required}
-        className="w-full bg-white border border-[#e5e4e0] rounded-md px-4 py-3 text-[15px] text-ink focus:outline-none focus:border-accent transition-colors"
-      />
+      <input name={name} type={type} required={required} className="w-full bg-white border border-[#e5e4e0] rounded-md px-4 py-3 text-[15px] text-ink focus:outline-none focus:border-accent transition-colors" />
     </div>
   );
 }
-
-/* -------------------- FOOTER -------------------- */
 
 function Footer() {
   return (
